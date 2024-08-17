@@ -3,7 +3,8 @@ type: topic
 status: active
 desc: Details who we model Channel 4 business and technology and the processes.
 title: Meta Model
-feed: show
+permalink: /meta_model
+feed: hide
 ---
 # Channel 4 Meta Model
 [[Architecture Documentation]] 

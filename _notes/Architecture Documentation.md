@@ -3,7 +3,8 @@ type: home
 status: active
 icon: LiHome
 title: Architecture Documentation
-feed: show
+permalink: /architecture_documenation
+feed: hide
 cssclasses:
   - cards
   - cards-1-1
