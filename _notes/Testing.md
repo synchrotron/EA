@@ -4,6 +4,7 @@ status: active
 desc: Getting the publishing working.
 title: Testing
 feed: show
+permalink: /EA/testing
 ---
 
 # Header 1
