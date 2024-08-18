@@ -16,7 +16,7 @@ What is an EAM? It's a framework for understanding the structure, behaviour and 
 
 The Channel 4 EAM Meta Model is depicted below:
 
-![[Assets/EAM Metamodel - Channel 4 Meta Model.png]]
+![Channel 4 Meta Model](/Assets/EAM Metamodel - Channel 4 Meta Model.png)
 
 We have increased the number of layers within the model form the default LeanIX model and it's worth explaining each here.
 
