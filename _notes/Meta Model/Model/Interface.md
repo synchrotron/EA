@@ -1,3 +1,13 @@
+---
+type: topic
+status: active
+desc: Details who we model Interfaces - the way applications exchange data.
+title: Interface
+permalink: /interface
+feed: hide
+---
+
+
 [[Architecture Documentation]] > [[Meta Model]] > [[Factsheets]]
  
 
