@@ -56,4 +56,4 @@ The Application Architecture Layer includes the repurposed Platform factsheet
 - [[Tech Capability]] this has been renamed from *Tech Category*, the purpoes remains as per the LeanIX default, it help categories what the IT Component does at a technical level.
 
 
-[[Architecture Documentation | < Prev]]   [[Factsheets|Next (Factsheet)>]]
+[[Architecture Documentation]] <->  [[Factsheets]]
