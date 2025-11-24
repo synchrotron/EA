@@ -18,11 +18,11 @@ workspace "Channel 4 Core" "Base Line Model" {
     /* The Finance Platform */
     
     fsp = softwareSystem "Finance System Platform" "Applications centred around the management of Colleagues and Employees" {
-            ebs = application "Oracle e-Business Suite" "Financial System of record" "Hosted App" "Finance Transformation"
+            ebs = application "Oracle e-Business Suite" "Financial System of record" "Hosted App"
             wda = application "Workday Adpative" "Financial Budgeting, Planning and Consolidation application." "SaaS"
-            sbi = application "SplashBI" "Description" "Type" "Finance Transformation"
-            bsw = application "Baseware" "Description" "Type" "Finance Transformation"
-            faf = application "Financial Approval Forms" "Description" "Type" "Finance Transformation"
+            sbi = application "SplashBI" "Description" "Type"
+            bsw = application "Baseware" "Description" "Type"
+            faf = application "Financial Approval Forms" "Description" "Type"
             pjc = application "Project Codes"
             tgn = application "Tungsten Network"
             msc = application "Mastercard"
@@ -58,7 +58,7 @@ workspace "Channel 4 Core" "Base Line Model" {
     /* Finance Platform Relationships with applications */
     ebs -> exr "Financial Data"
     ebs -> wda "Master and Transactional Data" "ERROR: Bi diectional!"
-    sbi -> ebs "Database reads" "VPN" "Finance Transformation"
+    splashTpEBS = sbi -> ebs "Database reads" "VPN"
     bsw -> ebs "Invoicing and Parchasing Master" "Mule"
     faf -> ebs "Delagated autority submissions" "Hosted"
     pjc -> ebs "Project Master Data" "Automate"
