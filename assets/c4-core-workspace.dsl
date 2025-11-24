@@ -6,6 +6,7 @@ workspace "Channel 4 Core" "Base Line Model" {
     
     archetypes {
             application = container
+            team = person
     }
     
     /* These are all the teams and departments */
@@ -14,6 +15,8 @@ workspace "Channel 4 Core" "Base Line Model" {
     finDept = person "Finance" "Oversee financial health, ensure compliance, support strategy, manage budgets and reporting" "Department"
     sharedServicesTeam = person "Shared Services" "Team that process invoices, management payments, verify expenses, maintain vendor relationships and ensure accuracy." "Team"
     taxTeam = person "Tax and Treasury" "Team that manage cash, investments, debt and ensure tax complience and reporting" "Team"
+
+    peopleOps = team "People Ops Team" "The people team help attract, support and grow collegues within the channel"
 
     /* The Finance Platform */
     
@@ -72,7 +75,20 @@ workspace "Channel 4 Core" "Base Line Model" {
     /* The People (HR) Platform */
      hrp = softwareSystem "People Platform" "Applications centred around the management of Colleagues and Employees" {
             4po = application "4People" "HCM People System" "SaaS HCM"
+            hnd = application "Handle" "Freelance payment solution" "SaaS"
+            fes = application "FES" "Freelancer Engagement Solution" "Hosted"
     }
+
+    /* HR Relationships with users */
+    allC4 -> fes "Freelancer requestors"
+    peopleOps -> fes "Management of freelancer process"
+
+    /* HR Relationships with applications */
+    4po -> wda "Colleague Master Data" "CSV File"
+    fes -> hnd "Freelancer contract data" "Email"
+    fes -> ebs "Project codes" "SFTP"
+    hnd -> ebs "Freelancer Invoice Data" "Email"
+
     cmp = softwareSystem "Commercial Platform"
     sbs = softwareSystem "Small Business Systems"
     c4s = softwareSystem "Channel 4 Streaming Platform"
