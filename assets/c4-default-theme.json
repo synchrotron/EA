@@ -5,15 +5,13 @@
   [
     {
       "tag" : "Container",
+	  "background" : "#37C400",
       "stroke" : "#808080",
 	  "shape" : "RoundedBox"
-    },
-	{
-      "tag" : "Application",
-      "background" : "#37C400"
     }, 
 	{
       "tag" : "Person",
+	  "background" : "#8895FF",
 	  "shape" : "Person", 
       "stroke" : "#8080"
   }, 
@@ -23,10 +21,6 @@
   }, 
   {
     "tag" : "Business Unit",
-    "background" : "#2e27ad"
-  }, 
-  {
-    "tag" : "Team",
     "background" : "#2e27ad"
   }
   ]
