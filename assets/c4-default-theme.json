@@ -7,6 +7,10 @@
       "tag" : "Container",
       "stroke" : "#808080",
 	    "shape" : "RoundedBox"
+    },
+	{
+      "tag" : "Application",
+      "backgroud" : "#37C400",
     }
   ]
 }
