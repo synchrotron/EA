@@ -30,7 +30,18 @@
   {         
     "tag" : "Focus",
     "background" : "#595959",
-    "color" : "#FFFFFF"
+    "color" : "#FFFFFF",
+	"description" : "Which Platform is the focus of the diagram"
   }
-  ]
+  ],
+  "relationships" : 
+  [ {
+    "tag" : "Relationship",
+    "thickness" : 4,
+    "color" : "#808080",
+    "routing" : "Curved"
+  }, {
+    "tag" : "Integration",
+    "style" : "Solid"
+  } ]
 }
