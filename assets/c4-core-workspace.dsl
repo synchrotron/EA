@@ -58,17 +58,17 @@ workspace "Channel 4 Core" "Base Line Model" {
     cfTeamToWorkday = comFinTeam -> wda "Produce plans and Budgets"        
     
     /* Finance Platform Relationships with applications */
-    ebs -> exr "Financial Data"
-    ebs -> wda "Master and Transactional Data" "ERROR: Bi diectional!"
-    splashTpEBS = sbi -> ebs "Database reads" "VPN"
-    bsw -> ebs "Invoicing and Parchasing Master" "Mule"
-    faf -> ebs "Delagated autority submissions" "Hosted"
-    pjc -> ebs "Project Master Data" "Automate"
-    tgn -> ebs "Customer Billing Ivoice" "Mule"
-    ebs -> cmx "Finacial Transactional Data" "File"
-    bbp -> ebs "Bank Statements and Payment files" "Automate"
-    ebs -> apt "Finacial Transactional Data" "File"
-    ebs -> sov "Finacial Transactional Data" "File"
+    ebs -> exr "Financial Data" "File" "Integration"
+    ebs -> wda "Master and Transactional Data" "ERROR: Bi diectional!" "Integration"
+    splashTpEBS = sbi -> ebs "Database reads" "VPN" "Integration"
+    bsw -> ebs "Invoicing and Parchasing Master" "Mule" "Integration"
+    faf -> ebs "Delagated autority submissions" "Hosted" "Integration"
+    pjc -> ebs "Project Master Data" "Automate" "Integration"
+    tgn -> ebs "Customer Billing Ivoice" "Mule" "Integration"
+    ebs -> cmx "Finacial Transactional Data" "File" "Integration"
+    bbp -> ebs "Bank Statements and Payment files" "Automate" "Integration"
+    ebs -> apt "Finacial Transactional Data" "File" "Integration"
+    ebs -> sov "Finacial Transactional Data" "File" "Integration"
     
         
     /* The People (HR) Platform */
@@ -83,10 +83,10 @@ workspace "Channel 4 Core" "Base Line Model" {
     peopleOps -> fes "Management of freelancer process"
 
     /* HR Relationships with applications */
-    4po -> wda "Colleague Master Data" "CSV File"
-    fes -> hnd "Freelancer contract data" "Email"
-    fes -> ebs "Project codes" "SFTP"
-    hnd -> ebs "Freelancer Invoice Data" "Email"
+    4po -> wda "Colleague Master Data" "CSV File" "Integration"
+    fes -> hnd "Freelancer contract data" "Email" "Integration"
+    fes -> ebs "Project codes" "SFTP" "Integration"
+    hnd -> ebs "Freelancer Invoice Data" "Email" "Integration"
 
     cmp = softwareSystem "Commercial Platform"
     sbs = softwareSystem "Small Business Systems"
