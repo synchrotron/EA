@@ -6,17 +6,16 @@ workspace "Channel 4 Core" "Base Line Model" {
     
     archetypes {
             application = container
-            team = person
     }
     
     /* These are all the teams and departments */
-    comFinTeam = person "Commercial Finance" "Team that analyse financial data, forecast performance, plan budgets and support strategic decisions." "Team"
-    allC4 = person "All Colleages" "All collegues working at C4" "Organisation"
-    finDept = person "Finance" "Oversee financial health, ensure compliance, support strategy, manage budgets and reporting" "Department"
-    sharedServicesTeam = person "Shared Services" "Team that process invoices, management payments, verify expenses, maintain vendor relationships and ensure accuracy." "Team"
-    taxTeam = person "Tax and Treasury" "Team that manage cash, investments, debt and ensure tax complience and reporting" "Team"
+    comFinTeam = person "Commercial Finance" "Team that analyse financial data, forecast performance, plan budgets and support strategic decisions."
+    allC4 = person "All Colleages" "All collegues working at C4" "Legal Entity"
+    finDept = person "Finance" "Oversee financial health, ensure compliance, support strategy, manage budgets and reporting" "Business Unit"
+    sharedServicesTeam = person "Shared Services" "Team that process invoices, management payments, verify expenses, maintain vendor relationships and ensure accuracy."
+    taxTeam = person "Tax and Treasury" "Team that manage cash, investments, debt and ensure tax complience and reporting"
 
-    peopleOps = team "People Ops Team" "The people team help attract, support and grow collegues within the channel"
+    peopleOps = person "People Ops Team" "The people team help attract, support and grow collegues within the channel"
 
     /* The Finance Platform */
     
@@ -94,11 +93,16 @@ workspace "Channel 4 Core" "Base Line Model" {
     c4s = softwareSystem "Channel 4 Streaming Platform"
     rsp = softwareSystem "Royalties and Sales Platform"
     
-    
- 
-    
-    
     }
-
+    views {
+    
+        terminology {
+            person "Team"
+            softwareSystem "Platform"
+            container "Application"
+        }
+    
+        themes https://raw.githubusercontent.com/synchrotron/EA/refs/heads/main/assets/c4-default-theme.json
+}
     
 }
