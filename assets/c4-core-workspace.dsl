@@ -53,7 +53,7 @@ workspace "Channel 4 Core" "Base Line Model" {
     finDept -> sbi "Create and distribute insights"
     finDept -> ebs "AP/AR/GL operation activities"
         
-    comFinTeam -> wda "Produce plans and Budgets"        
+    cfTeamToWorkday = comFinTeam -> wda "Produce plans and Budgets"        
     
     /* Finance Platform Relationships with applications */
     ebs -> exr "Financial Data"
