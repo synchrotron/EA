@@ -22,6 +22,15 @@
   {
     "tag" : "Business Unit",
     "background" : "#2e27ad"
+  },
+  {	  
+	"tag" : "Software System",
+    "background" : "#dfe3e8"
+  },
+  {         
+    "tag" : "Focus",
+    "background" : "#595959",
+    "color" : "#FFFFFF"
   }
   ]
 }
