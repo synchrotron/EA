@@ -14,12 +14,12 @@
     "stroke" : "#8080",
   }, {
     "tag" : "Legal Entity",
-    "colour" : "#2e27ad"
+    "background" : "#2e27ad"
   }, {
     "tag" : "Business Unit",
-    "colour" : "#2e27ad"
+    "background" : "#2e27ad"
   }, {
     "tag" : "Team",
-    "colour" : "#2e27ad"
+    "background" : "#2e27ad"
   }
   ]}
