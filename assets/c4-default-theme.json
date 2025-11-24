@@ -6,11 +6,11 @@
     {
       "tag" : "Container",
       "stroke" : "#808080",
-	    "shape" : "RoundedBox"
+	  "shape" : "RoundedBox"
     },
 	{
       "tag" : "Application",
-      "backgroud" : "#37C400"
+      "background" : "#37C400"
     }, 
 	{
       "tag" : "Person",
@@ -19,15 +19,15 @@
   }, 
   {
     "tag" : "Legal Entity",
-    "backgroud" : "#2e27ad"
+    "background" : "#2e27ad"
   }, 
   {
     "tag" : "Business Unit",
-    "backgroud" : "#2e27ad"
+    "background" : "#2e27ad"
   }, 
   {
     "tag" : "Team",
-    "backgroud" : "#2e27ad"
+    "background" : "#2e27ad"
   }
   ]
 }
