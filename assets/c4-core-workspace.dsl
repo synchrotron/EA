@@ -103,6 +103,13 @@ workspace "Channel 4 Core" "Base Line Model" {
         }
     
         themes https://raw.githubusercontent.com/synchrotron/EA/refs/heads/main/assets/c4-default-theme.json
+        branding {
+            logo https://s3.eu-west-1.amazonaws.com/mattnlou.co.uk/structurizr/4-Logo-Positive-RGB-Black.png
+            font "4Text" https://s3.eu-west-1.amazonaws.com/mattnlou.co.uk/structurizr/font/4Text-Regular.ttf
+        }
+   
+
+
 }
     
 }
