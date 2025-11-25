@@ -32,6 +32,12 @@
     "background" : "#595959",
     "color" : "#FFFFFF",
 	"description" : "Which Platform is the focus of the diagram"
+  },
+  {
+    "tag" : "Boundary",
+    "stroke" : "#808080",
+    "color" : "#808080",
+    "border" : "Dotted"
   }
   ],
   "relationships" : 
